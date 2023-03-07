@@ -2,7 +2,7 @@
 <h3 id="welcome-small">Sisseastumiskatsed</h3>
 <div class="welcome-text">
     <p>
-        Tere tulemasts Tartu Kutsehariduskeskuse noorem tarkvaraarendaja ja veebispetsialisti eriala
+        Tere tulemast Tartu Kutsehariduskeskuse noorem tarkvaraarendaja ja veebispetsialisti eriala
         sisseastumiskatsetele!
         Sind ootavad ees valikvastustega teoreetiline test ja praktiline test HTMLi ja CSSi kohta. Teoreetiline test
         sisaldab

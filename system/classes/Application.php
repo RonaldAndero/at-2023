@@ -11,11 +11,10 @@ error_reporting(E_ALL);
 
 class Application
 {
-    public $auth = null;
-    public $params = null;
-    public $action = 'index';
-    public $controller = DEFAULT_CONTROLLER;
-
+    public string $action = 'index';
+    public string $controller = DEFAULT_CONTROLLER;
+    public ?array $params = null;
+    public ?Auth $auth = null;
 
     function __construct()
     {
@@ -43,23 +42,23 @@ $this->process_uri();
         $this->auth = new Auth();
 	
 
-        // Instantiate controller
-        $controller_fqn = '\Halo\\' . $this->controller;
+            // Instantiate controller
+            $controller_fqn = '\Halo\\' . $this->controller;
 
-        if (!file_exists("controllers/$this->controller.php"))
-            error_out("<b>Error:</b> File <i>controllers/{$this->controller}.php</i> does not exist.", 404);
-        require "controllers/$this->controller.php";
+            if (!file_exists("controllers/$this->controller.php"))
+                error_out("<b>Error:</b> File <i>controllers/{$this->controller}.php</i> does not exist.", 404);
+            require "controllers/$this->controller.php";
 
-        if (!class_exists($controller_fqn, 1))
-            error_out("<b>Error:</b>
-				File  <i>controllers/{$this->controller}.php</i> exists but class <i>{$this->controller}</i> does not. You probably copied the file but forgot to rename the class in the copy.", 500);
-        $controller = new $controller_fqn();
+            if (!class_exists($controller_fqn, 1))
+                error_out("<b>Error:</b>
+                    File  <i>controllers/{$this->controller}.php</i> exists but class <i>{$this->controller}</i> does not. You probably copied the file but forgot to rename the class in the copy.", 500);
+            $controller = new $controller_fqn();
 
-        $controller->controller = $this->controller;
-        // Make request and auth properties available to controller
-        $controller->action = $this->action;
-        $controller->params = $this->params;
-        $controller->auth = $this->auth;
+            $controller->controller = $this->controller;
+            // Make request and auth properties available to controller
+            $controller->action = $this->action;
+            $controller->params = $this->params;
+            $controller->auth = $this->auth;
 
         // Check if the user has extended Controller
         if (!isset($controller->requires_auth)) {

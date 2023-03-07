@@ -15,7 +15,7 @@ class welcome extends Controller
         $this->welcome = true;
 
         // handle redirection if necessary
-        if (isset($_SESSION['practical']) || Questions::getResult($_SESSION['user_id']) >= 0) {
+        if (isset($_SESSION['practical']) || (isset($_SESSION['user_id']) && Questions::getResult($_SESSION['user_id']) >= 0)) {
             header('Location: test/practical');
             exit();
         } else if (isset($_SESSION['theoretical'])) {
