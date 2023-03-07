@@ -49,7 +49,7 @@ ___________              __           ____  __.___ ___  ____  __.
             <a href="http://khk.ee/" target="_blank"><img id="khk-logo" src="images/khk_logo.png" alt="logo"/></a>
         </div>
         <div class="navbar-form navbar-right">
-            <?php if (isset($_SESSION['user_id'])): ?>
+            <?php if (isset($_SESSION['user_id']) && isset($_SESSION['name']) && isset($_SESSION['social_id'])): ?>
                 <h4><?= $_SESSION['name'] . ', ' . $_SESSION['social_id'] ?></h4>
             <?php endif; ?>
         </div>
