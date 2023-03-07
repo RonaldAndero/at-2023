@@ -1,4 +1,4 @@
-Aasta Tegija 2017
+Aasta Tegija 2023
 ===
 Online HTML/CSS test environment for Tartu Vocational Education Centre that
 won first place in school competition. This project uses 
