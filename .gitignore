@@ -1,0 +1,6 @@
+/.idea/*
+/config.php
+/system/logs/*.log
+/vendor/*
+/doc/questions&answers.sql
+/doc/testdata.sql

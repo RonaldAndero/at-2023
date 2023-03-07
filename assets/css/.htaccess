@@ -1,0 +1,4 @@
+<FilesMatch "\.(jpg|gif|png|ico|woff|eot|css)$">
+Header set Cache-Control "max-age=0"
+</FilesMatch>
+

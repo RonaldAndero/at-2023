@@ -1,0 +1,614 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url('opensans.woff2') format('woff2');
+}
+
+html {
+    position: relative;
+    min-height: 94%;
+}
+
+/*Normalise html and body elements */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 50px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.responsive {
+    overflow-x: auto;
+}
+
+.blue-hr {
+    border-bottom: 1px solid lightblue;
+}
+
+/*************** FOOTER ****************/
+#fb-logo {
+    height: 50px;
+}
+
+#fb-logo:hover {
+    opacity: 0.70;
+}
+
+.footer-block {
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: -57px;
+    border-top: solid 2px #5498cb;
+    background: #fcf7cc;
+}
+
+.modal-footer {
+    display: block !important;
+    margin: auto !important;
+}
+
+@media (min-width: 10px) and (max-width: 1000px) {
+
+    footer {
+        position: static;
+        height: 60px;
+        margin-top: 20px;
+    }
+}
+
+/**************** FOOTER END *********************/
+/************** MODAL TWITCH FIX *****************/
+.modal-open {
+    padding-right: 0 !important;
+}
+
+html {
+    overflow-y: scroll !important;
+}
+
+/************** MODAL FIX END *****************/
+
+/************** NAVBAR *****************/
+
+.navbar-default {
+    box-shadow: 2px 1px 1px lightgrey;
+}
+
+.logout {
+    display: block;
+    float: right;
+    margin-top: -3px;
+}
+
+.glyphicon-log-out, .log-out-txt {
+    font-size: 14px;
+}
+
+.navbar-admin {
+    background: #194f72;
+    /*font-size: 18px;*/
+}
+
+.navbar-admin a {
+    padding: 7px 9px !important;
+    margin-right: 4px;
+    margin-top: 7.5px;
+    border-radius: 5px;
+    color: white !important;
+    text-shadow: none !important;
+}
+
+.navbar-admin a:hover {
+    background: #5498cb !important;
+}
+
+.navbar-nav > .active > a {
+    background: #fcf7cc !important;
+    color: grey !important;
+}
+
+/************** NAVBAR END *****************/
+
+/************** LOGIN PAGE ****************/
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+    font-weight: normal;
+}
+
+.form-signin .form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.modal-input input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.modal-input input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+span.input-group-addon {
+    width: 50px;
+}
+
+div.input-group {
+    width: 100%;
+}
+
+form.form-signin {
+    background-color: #ffffff;
+}
+
+/************** LOGIN PAGE END ****************/
+
+/************** RESULT PAGE ****************/
+
+.table-box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+    height: 99%;
+    box-shadow: 5px 5px 7px #edf0f4;
+}
+
+.results td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.results tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.results tr:hover {
+    background-color: #ddd;
+}
+
+.results th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #5498cb;
+    color: white;
+}
+
+.not-graded {
+    color: red;
+}
+
+.graded {
+    font-weight: bold;
+    color: black;
+}
+
+#pushToLog {
+    width: 130px;
+    border-radius: 6px;
+    background-color: #5bc0de;
+    border-color: #5bc0de;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 60px;
+    margin-top: 30px;
+    border-style: none;
+    padding: 7px;
+}
+
+#pushToLog:hover {
+    background-color: #5498cb !important;
+    border-color: #5498cb;
+}
+
+/************** RESULT PAGE END ****************/
+
+/************** THEORETICAL PAGE ****************/
+
+.question-heading {
+    font-weight: bolder;
+    color: white;
+}
+
+.question-heading ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: white !important;
+}
+
+.question-heading :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: white;
+    opacity: 1;
+}
+
+.question-heading ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: white;
+    opacity: 1;
+}
+
+.question-heading :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
+
+.question-head {
+    background-color: #5498cb;
+}
+
+.question-heading input:focus {
+    background-color: black;
+}
+
+.theoretical-container {
+    display: block;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.theoretical tr:hover {
+    background-color: #ddd;
+}
+
+.theoretical tr:last-child:hover {
+    background-color: transparent;
+}
+
+.theoretical .questions {
+    width: 100%;
+    border: none;
+    background: rgba(0, 0, 0, 0);
+    padding: 5px;
+}
+
+.theoretical .answers {
+    width: 100%;
+    border: none;
+    background: rgba(0, 0, 0, 0);
+    padding: 10px;
+}
+
+.editTheoretical, .deleteTheoretical, .addTheoretical {
+    font-size: 14px;
+}
+
+.edit-successful {
+    opacity: 0;
+    color: green;
+}
+
+.edit-error {
+    opacity: 0;
+    color: red;
+}
+
+#search-theoretical {
+    width: 100%;
+}
+
+#error-adding {
+    color: red;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+/*************** placeholder text ********************/
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #504f60;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #504f60;
+    opacity: 1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #504f60;
+    opacity: 1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #504f60;
+}
+
+/************** THEORETICAL PAGE END ****************/
+
+/************** PRACTICTAL PAGE *********************/
+.practical-description {
+    width: 100%;
+    height: 250px;
+}
+
+.practical-box {
+    box-shadow: 5px 5px 3px lightgrey;
+    padding: 20px;
+    background: #fcf7cc;
+    border: 1px solid lightblue;
+}
+
+.h4-custom {
+    font-weight: bold;
+}
+
+/************** PRACTICTAL PAGE END *********************/
+
+/************** SETTINGS PAGE  ****************/
+.settings-box {
+    box-shadow: 5px 5px 3px lightgrey;
+    background: #fcf7cc;
+    padding: 20px;
+    border: 1px solid lightblue;
+}
+
+.settings-hr {
+    border-bottom: 1px solid lightgrey;
+}
+
+.settings-btn {
+    font-size: 14px;
+    padding: 3px;
+    width: 80px;
+    margin-bottom: 3px;
+    margin-left: 5px;
+}
+
+.settings-selection {
+    font-size: 18px;
+}
+
+#liveTime {
+    color: red;
+    font-size: 18px;
+}
+
+#passwordForm {
+    margin-bottom: 80px;
+}
+
+#passwordForm input {
+    margin-bottom: 15px;
+}
+
+.passwordform-text {
+    margin-bottom: 20px;
+}
+
+/************** SETTINGS PAGE END ****************/
+
+/************** GRADING PAGE *********************/
+label.btn span {
+    font-size: 1.5em;
+}
+
+div[data-toggle="pill"] label.active {
+    color: #7AA3CC;
+}
+
+div[data-toggle="pill"] label input {
+    display: none !important;
+}
+
+div[data-toggle="pill"] label {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 2em;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: top;
+    cursor: pointer;
+    border: 0px solid #c8c8c8;
+    border-radius: 3px;
+    color: #c8c8c8;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+div[data-toggle="pill"] label:hover {
+    color: #7AA3CC;
+}
+
+div[data-toggle="pill"] label:active, div[data-toggle="pills"] label.active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+div[data-toggle="pill"] label.hover {
+    outline: none !important;
+    display: none;
+}
+
+.nav-pills li:not(:active):hover {
+    background: #e5f1f9 !important;
+    border-radius: 5px;
+}
+
+.nav-pills > li > a:hover {
+    background: #e5f1f9;
+}
+
+.graded-green {
+    font-weight: bold;
+    color: green;
+}
+
+.preview-modal {
+    width: 100%;
+    height: 500px;
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: 5px 5px 3px lightgrey;
+}
+
+.left-side {
+    height: 70vh;
+    overflow: auto;
+    box-shadow: 5px 5px 3px lightgrey;
+    border: 1px solid lightblue;
+}
+
+.left-side a {
+    margin-top: 5px;
+}
+
+.tab-content {
+    padding: 10px;
+    overflow: auto;
+    height: 70vh;
+    box-shadow: 5px 5px 3px lightgrey;
+    border: 1px solid lightblue;
+}
+
+.grading-wrapper {
+    width: 100%;
+}
+
+.list-none {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/****************** GRADING PAGE END ***********************/
+
+/****************** LOG PAGE ***********************/
+
+#search-log {
+    display: block;
+    margin: 0 auto;
+    width: 99%;
+}
+
+.sort-right {
+    float: right !important;
+    margin-top: -2px;
+}
+
+#log-head th:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+/****************** LOG PAGE END ***********************/
+/****************** HELP PAGE ***********************/
+
+.help-box {
+    box-shadow: 5px 5px 3px lightgrey;
+    border: 1px solid lightblue;
+    padding: 10px 40px 10px 40px;
+    margin-bottom: 60px;
+}
+
+.help-box h4 {
+    font-weight: bold;
+}
+
+.help-box hr {
+    border-bottom: 1px solid lightgrey;
+
+}
+
+/****************** HELP PAGE END ***********************/
+
+/***************** COLLAPSE NAVBAR SOONER *********************/
+@media (max-width: 995px) {
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-left, .navbar-right {
+        float: none !important;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .navbar-nav {
+        float: none !important;
+        margin-top: 7.5px;
+    }
+
+    .navbar-nav > li {
+        float: none;
+    }
+
+    .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .collapse.in {
+        display: block !important;
+    }
+
+    .navbar-admin a:active {
+        width: 80%;
+    }
+
+    .logout {
+        float: right !important;
+        padding-right: 10px !important;
+    }
+
+    .responsive {
+        margin-bottom: 20px;
+    }
+
+    .left-side {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        opacity: 0;
+    }
+}
